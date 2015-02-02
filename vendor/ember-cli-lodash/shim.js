@@ -4,7 +4,15 @@
 define('lodash', [], function() {
   "use strict";
 
-  return {
+  var out = {
     'default': _
   };
+
+  for(var key in _) {
+    if (_.hasOwnProperty(key)) {
+      out[key] = _[key];
+    }
+  }
+
+  return out;
 });

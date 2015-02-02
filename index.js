@@ -6,7 +6,7 @@ module.exports = {
 
   included: function included(app) {
     this.app = app;
-    app.import(app.bowerDirectory + '/lodash/dist/lodash.min.js');
+    app.import(app.bowerDirectory + '/lodash/lodash.js');
 
     // special thanks to https://github.com/rwjblue/ember-cli-pretender
     app.import('vendor/ember-cli-lodash/shim.js', {
