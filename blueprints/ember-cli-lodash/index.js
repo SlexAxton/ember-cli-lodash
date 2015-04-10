@@ -8,6 +8,6 @@ module.exports = {
   },
 
   afterInstall: function() {
-    return this.addBowerPackageToProject('lodash', '^3.0.1');
+    return this.addBowerPackageToProject('lodash', '3.6.0-amd');
   }
 };

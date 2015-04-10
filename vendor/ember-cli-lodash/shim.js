@@ -1,5 +1,4 @@
-/* globals Lo-Dash */
-// https://github.com/rwjblue/ember-cli-pretender
+/* globals _ */
 
 define('lodash', [], function() {
   "use strict";
@@ -7,12 +6,6 @@ define('lodash', [], function() {
   var out = {
     'default': _
   };
-
-  for(var key in _) {
-    if (_.hasOwnProperty(key)) {
-      out[key] = _[key];
-    }
-  }
 
   return out;
 });
